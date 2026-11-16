@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Pachinko Nights</title>
+<meta name="description" content="An offline idle pachinko game for Android: launch silver balls through a neon board, upgrade it and watch the yen pour in. No ads, no purchases, no data collected.">
+<meta property="og:title" content="Neon Pachinko Nights">
+<meta property="og:description" content="An offline idle pachinko game for Android. No ads, no purchases, no data collected.">
+<meta property="og:image" content="https://snugfit.github.io/pachinko/img/og.jpg">
+<meta name="theme-color" content="#0b0718">
+<link rel="icon" href="img/icon.png">
+<style>
+  :root { --bg: #0b0718; --panel: #150e2b; --text: #e8ecf5; --muted: #b7b0cc;
+          --pink: #ff2bd6; --cyan: #19e6ff; --yellow: #ffe14d; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 40px 16px 56px; }
+  header { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  header img { width: 96px; height: 96px; border-radius: 22px; }
+  h1 { margin: 0; font-size: 2.1em; line-height: 1.15; color: var(--pink);
+       text-shadow: 0 0 18px rgba(255, 43, 214, .45); }
+  .tagline { margin: 4px 0 0; color: var(--cyan); }
+  .play { display: inline-block; margin: 28px 0 8px; padding: 12px 22px; border-radius: 12px;
+          border: 2px solid var(--yellow); color: var(--yellow); text-decoration: none; font-weight: 600; }
+  .soon { border-style: dashed; opacity: .85; }
+  .shots { display: flex; gap: 14px; overflow-x: auto; padding: 18px 0 10px;
+           scroll-snap-type: x mandatory; }
+  .shots img { flex: 0 0 auto; width: 220px; height: auto; aspect-ratio: 1 / 2; border-radius: 14px;
+               border: 1px solid #2a1f4d; scroll-snap-align: start; background: var(--panel); }
+  h2 { font-size: 1.15em; margin: 30px 0 6px; color: var(--cyan); }
+  ul { padding-left: 1.2em; margin: 6px 0; }
+  li { margin: 3px 0; }
+  .facts { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+  .facts li { margin: 0; padding: 4px 12px; border-radius: 999px; background: var(--panel);
+              border: 1px solid #2a1f4d; color: var(--muted); font-size: .9em; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #2a1f4d; color: var(--muted); font-size: .95em; }
+  a { color: var(--pink); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="img/icon.png" alt="" width="96" height="96">
+    <div>
+      <h1>Neon Pachinko Nights</h1>
+      <p class="tagline">Pachinko that keeps on paying. An offline idle game for Android.</p>
+    </div>
+  </header>
+
+  <ul class="facts">
+    <li>No ads</li><li>No in-app purchases</li><li>No account</li><li>No data collected</li><li>Works offline</li>
+  </ul>
+
+  <!-- When the game is on Google Play, replace this span with:
+       <a class="play" href="https://play.google.com/store/apps/details?id=io.github.snugfit.neon_pachinko">Get it on Google Play</a> -->
+  <span class="play soon">Coming soon to Google Play</span>
+
+  <div class="shots">
+    <img src="img/02-neo-shibuya.webp" alt="The neon board full of balls, bumpers, spinners and multiplier gates" width="540" height="1080">
+    <img src="img/01-board.webp" alt="The pachinko board with the plunger" width="540" height="1080" loading="lazy">
+    <img src="img/03-shop.webp" alt="The shop with upgrades" width="540" height="1080" loading="lazy">
+    <img src="img/04-rebirth.webp" alt="Rebirth for tamashii and a new district" width="540" height="1080" loading="lazy">
+    <img src="img/06-away.webp" alt="Income collected while the game was closed" width="540" height="1080" loading="lazy">
+  </div>
+
+  <p>Pull the plunger, let go, and watch a silver ball bounce through a glowing neon pachinko board.
+  Every pocket pays. Upgrade the board, automate the launches and see the numbers climb into the trillions.</p>
+
+  <h2>Build your board</h2>
+  <ul>
+    <li>Bumpers, multiplier gates, tulip cups with wings, a wider jackpot and spinning kazaguruma</li>
+    <li>An auto-launcher, multi-ball, the beckoning maneki-neko and neon amplifiers</li>
+    <li>Catch the yūrei, a ghost hologram that drifts across the board, for bursts and boosts</li>
+  </ul>
+
+  <h2>Keeps earning while you're away</h2>
+  <ul>
+    <li>The auto-launcher works while the game is closed; collect when you come back</li>
+    <li>Rebirth for tamashii and permanent bonuses, then move on to a new district</li>
+  </ul>
+
+  <h2>Easy on your battery</h2>
+  <ul>
+    <li>Graphics quality setting, and Low graphics automatically in battery saver</li>
+    <li>The game stops drawing when nothing moves</li>
+  </ul>
+
+  <h2>Not gambling</h2>
+  <p>Launching a ball is free. Nothing is wagered and nothing can be won: the yen in the game
+  can't be bought or cashed out.</p>
+
+  <footer>
+    <p><a href="privacy/">Privacy policy</a> · Contact: <a href="mailto:snugfit007700@gmail.com">snugfit007700@gmail.com</a> · <a href="../">More games by snugfit</a></p>
+  </footer>
+</main>
+</body>
+</html>
